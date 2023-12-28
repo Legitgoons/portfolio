@@ -64,6 +64,48 @@
         "json": "never"
       }
     ],
-    "import/order": ["error", {}]
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "pathGroups": [
+          {
+            "pattern": "react*",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "next*",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "@components/*",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "@types/*",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "@utils/*",
+            "group": "internal",
+            "position": "after"
+          }
+        ],
+        "alphabetize": {
+          "order": "asc"
+        }
+      }
+    ]
   }
 }
