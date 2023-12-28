@@ -12,6 +12,6 @@
 
 ### Test Checklist ☑️
 
-    - [ ]
+- [ ] Checklist
 
 ### Screenshot(option)
